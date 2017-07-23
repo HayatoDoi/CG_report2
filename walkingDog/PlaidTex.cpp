@@ -7,9 +7,9 @@
 void PlaidTex::init(void)
 {
 	// ‰æ‘w‚Ì“Ç‚İ‚İ
-	cv::Mat im = cv::imread("C:\\Users\\nono\\Desktop\\final.png");
+	cv::Mat im = cv::imread("final.png");
 	if (!im.data) {
-		std::cout << "Can not open tex file\n";
+		std::cout << "Can not open tex file" << std::endl;
 	}
 	else {
 		printf("R:%d G:%d B:%d \n", im.at<cv::Vec3b>(0, 0)[2], im.at<cv::Vec3b>(0, 0)[1], im.at<cv::Vec3b>(0, 0)[0]);
